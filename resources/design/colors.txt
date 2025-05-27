@@ -1,0 +1,7 @@
+/* === FUTURE GARAGE COLOR PALETTE === */
+--matte-olive: #697C00;           /* Accent bars, banners */
+--dark-cyan-green: #014037;       /* Backgrounds, dark UI */
+--bright-yellow-lime: #D8E000;    /* Buttons, highlights */
+--smoke-gray: #E0E0E0;            /* Section backgrounds, body text */
+--charcoal-black: #131313;        /* Headers, footer */
+--sky-ink-blue: #1D3557;          /* Subheadings, icons */

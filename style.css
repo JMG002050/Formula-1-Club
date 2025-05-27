@@ -34,12 +34,16 @@
   min-height: 100vh;
 }
 
+
+/* === HEADER === */
 .layout-header {
   grid-area: header;
   background: #333;
   color: white;
-  /* padding: 1rem; */
 }
+
+
+
 
 .layout-main {
   grid-area: main;
