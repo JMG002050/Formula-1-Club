@@ -1,0 +1,30 @@
+/* === GOOGLE FONT IMPORT === */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Roboto&display=swap');
+
+/* === FONT USAGE === */
+
+/* Main Headings (Big titles, logo text) */
+--font-heading: 'Anton', sans-serif;
+
+/* Subheadings (Section headers, cards) */
+--font-subheading: 'Oswald', sans-serif;
+
+/* Body Text (Paragraphs, navigation, etc.) */
+--font-body: 'Roboto', sans-serif;
+
+/* Example Usage */
+h1, h2 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h3, h4 {
+  font-family: var(--font-subheading);
+  text-transform: uppercase;
+}
+
+body, p, li, a {
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
