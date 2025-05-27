@@ -24,6 +24,12 @@ body, p, li, a {
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 /* .page-layout > * {
   border: 1px dashed #ccc;
 } */
@@ -112,10 +118,11 @@ body, p, li, a {
 .layout-main {
   grid-area: main;
   background: #f4f4f4;
-  background-image: url("./resources/hero-section.png");
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)), 
+    url("./resources/hero-section.png");
   color: black;
-  min-height: 80vh;
-  background-position: 0px -40px;
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -132,12 +139,27 @@ body, p, li, a {
   text-transform: none;
 }
 
+.layout-main button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #D8E000;
+  color: #131313;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+
 
 /* === SECTION 1 === */
 .layout-section1 {
   grid-area: section1;
   background: #fff;
   color: black;
+  min-height: 200px;
 }
 
 .layout-section2 {
@@ -166,3 +188,13 @@ body, p, li, a {
   /* padding: 1rem; */
   text-align: center;
 }
+
+
+
+/* === MEDIA QUERY === */
+/* @media (max-width: 768px) {
+  .layout-main h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+} */
