@@ -1,0 +1,83 @@
+/* === UNIVERSAL RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-layout > * {
+  border: 1px dashed #ccc;
+}
+
+.layout-header,
+.layout-main,
+.layout-section1,
+.layout-section2,
+.layout-section3,
+.layout-section4
+.layout-footer {
+  padding: 1rem;
+}
+
+/* === PAGE LAYOUT === */
+.page-layout {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "section1 section2 section3"
+    "section1 section4 section4"
+    "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  /* gap: 1rem; */
+  min-height: 100vh;
+}
+
+.layout-header {
+  grid-area: header;
+  background: #333;
+  color: white;
+  /* padding: 1rem; */
+}
+
+.layout-main {
+  grid-area: main;
+  background: #f4f4f4;
+  /* padding: 1rem; */
+  color: black;
+}
+
+.layout-section1 {
+  grid-area: section1;
+  background: #fff;
+  /* padding: 1rem; */
+  color: black;
+}
+
+.layout-section2 {
+  grid-area: section2;
+  background: #fff;
+  /* padding: 1rem; */
+  color: black;
+}
+.layout-section3 {
+  grid-area: section3;
+  background: #fff;
+  /* padding: 1rem; */
+  color: black;
+}
+.layout-section4 {
+  grid-area: section4;
+  background: #fff;
+  /* padding: 1rem; */
+  color: black;
+}
+
+.layout-footer {
+  grid-area: footer;
+  background: #333;
+  color: white;
+  /* padding: 1rem; */
+  text-align: center;
+}
