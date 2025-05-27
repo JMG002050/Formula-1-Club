@@ -1,3 +1,22 @@
+/* === FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Roboto&display=swap');
+
+h1, h2 {
+  font-family: 'Anton', sans-serif;;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h3, h4 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+body, p, li, a {
+  font-family: 'Roboto', sans-serif;;
+  line-height: 1.6;
+}
+
 /* === UNIVERSAL RESET === */
 * {
   margin: 0;
@@ -9,12 +28,12 @@
   border: 1px dashed #ccc;
 }
 
-.layout-header,
+/* .layout-header, */
 .layout-main,
 .layout-section1,
 .layout-section2,
 .layout-section3,
-.layout-section4
+.layout-section4,
 .layout-footer {
   padding: 1rem;
 }
@@ -29,8 +48,7 @@
     "section1 section4 section4"
     "footer footer footer";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  /* gap: 1rem; */
+  grid-template-rows: auto auto auto auto auto;
   min-height: 100vh;
 }
 
@@ -38,24 +56,75 @@
 /* === HEADER === */
 .layout-header {
   grid-area: header;
-  background: #333;
+  background: #014037;
   color: white;
+  padding-right: 1rem;
+  /*separating the main content inside*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.layout-header img {
+  max-width: 10%;
+  cursor: pointer;
+}
+
+.layout-header nav {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.layout-header ul {
+  display: flex;
+  margin: auto 0;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-header li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.layout-header li:hover {
+  color: #D8E000;
+  transition: color 0.2s ease-in-out;
+}
+
+.layout-header button {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: #D8E000;
+  color: #131313;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.layout-header button:hover {
+  background-color: #E0E0E0;
 }
 
 
-
-
+/* === MAIN SECTION === */
 .layout-main {
   grid-area: main;
   background: #f4f4f4;
-  /* padding: 1rem; */
+  background-image: url("./resources/hero-section.png");
   color: black;
+  min-height: 80vh;
+  background-position: 0px -40px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
 
 .layout-section1 {
   grid-area: section1;
   background: #fff;
-  /* padding: 1rem; */
   color: black;
 }
 
