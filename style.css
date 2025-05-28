@@ -229,8 +229,26 @@ body, p, li, a {
   grid-area: footer;
   background: #131313;
   color: white;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start; /* Align items to top of container */
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap; /* Makes it responsive too */
+  text-align: left;
+}
 
+.about-us,
+.contact-us,
+.quick-links {
+  flex: 1;          /* All take equal space initially */
+  min-width: 100px; /* Prevents collapsing on small screens */
+  /* border: 1px solid red; */
+  padding: 2rem;
+}
+
+.quick-links li {
+  list-style: none;
 }
 
 
