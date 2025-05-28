@@ -41,7 +41,14 @@ html, body {
 .layout-section3,
 .layout-section4,
 .layout-footer {
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.layout-section1, 
+.layout-section2,
+.layout-section3,
+.layout-section4 {
+  gap: 3rem;
 }
 
 /* === PAGE LAYOUT === */
@@ -117,7 +124,6 @@ html, body {
 /* === MAIN SECTION === */
 .layout-main {
   grid-area: main;
-  background: #f4f4f4;
   background-image:
     linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)), 
     url("./resources/hero-section.png");
@@ -153,48 +159,90 @@ html, body {
 }
 
 
-
 /* === SECTION 1 === */
 .layout-section1 {
   grid-area: section1;
-  background: #fff;
-  color: black;
-  min-height: 200px;
+  background: #697C00;
+  color: #fff;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
 }
 
+
+/* === SECTION 2 === */
 .layout-section2 {
   grid-area: section2;
-  background: #fff;
-  /* padding: 1rem; */
-  color: black;
-}
-.layout-section3 {
-  grid-area: section3;
-  background: #fff;
-  /* padding: 1rem; */
-  color: black;
-}
-.layout-section4 {
-  grid-area: section4;
-  background: #fff;
-  /* padding: 1rem; */
-  color: black;
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)),
+    url("./resources/latest-news.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .1rem solid #E0E0E0;
 }
 
+.layout-section2 h2 {
+  color: #f4f4f4;
+  font-size: 2.5rem;
+}
+
+
+/* === SECTION 3 === */
+.layout-section3 {
+  grid-area: section3;
+    background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)),
+    url("./resources/exclusive-events.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .1rem solid #E0E0E0;
+}
+
+.layout-section3 h2 {
+  color: #f4f4f4;
+  font-size: 2.5rem;
+}
+
+/* === SECTION 4 === */
+.layout-section4 {
+  grid-area: section4;
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)),
+    url("./resources/free-tickets.jpg");
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-color: #014037;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout-section4 h2 {
+  color: #f4f4f4;
+  font-size: 2.5rem;
+}
+
+
+/* === FOOTER SECTION === */
 .layout-footer {
   grid-area: footer;
-  background: #333;
+  background: #131313;
   color: white;
-  /* padding: 1rem; */
   text-align: center;
+  
 }
 
 
 
 /* === MEDIA QUERY === */
-/* @media (max-width: 768px) {
-  .layout-main h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-} */
