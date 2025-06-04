@@ -32,12 +32,67 @@ body, p, li, a {
   line-height: 1.6;
 }
 
-/* img {
+img {
   max-width: 100%;
   height: auto;
 }
 
-button {
-  width: 100%;
-  max-width: 300px;
-} */
+
+/* === HEADER SECTION === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131313;
+  color: rgb(237, 231, 231);
+  padding: 0rem 2rem;
+}
+
+header img {
+  max-width: 10%;
+  height: auto;
+  display: block;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set li to align center */
+header ul li {
+  display: flex;
+  align-items: center;
+}
+
+/* Normalize both anchor and button */
+header ul li a,
+header ul li button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add style to button */
+header ul li button {
+  background-color: #D8E000;
+  color: #131313;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+header ul li button:hover {
+  background-color: #1D3557;
+  color: white;
+}
