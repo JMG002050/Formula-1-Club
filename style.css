@@ -151,13 +151,78 @@ header ul li button:hover {
 
 /* === HERO SECTION === */
 .join {
-  background-color: #1D3557;
+  background-color: #014037;
   color: aliceblue;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-area: 
-  "h1" ""
-  "h1" ""
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "layout-section1 layout-section2"
+  "layout-section1 layout-section3"
+  "layout-section1 layout-section4"
   ;
-
+  gap: 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
+
+.layout-section1 {
+  grid-area: layout-section1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: #697C00;
+}
+
+.layout-section2 {
+  grid-area: layout-section2;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./resources/latest-news.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  
+}
+
+.layout-section3 {
+  grid-area: layout-section3;
+  /* border: 1px solid red; */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./resources/exclusive-events.png");
+  background-size: cover;
+  /* background-position: 0px -20px; */
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.layout-section4 {
+  grid-area: layout-section4;
+  /* border: 1px solid red; */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./resources/free-tickets.jpg");
+  background-size: cover;
+  /* background-position: 0px -40px; */
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+
+/* === HERO SECTION === */
