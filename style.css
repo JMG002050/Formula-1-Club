@@ -96,3 +96,68 @@ header ul li button:hover {
   background-color: #1D3557;
   color: white;
 }
+
+
+/* === HERO SECTION === */
+.hero {
+  background-image: url("/resources/hero-section.png");
+  min-height: 85vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  gap: 2.5rem;
+  padding-left: 4rem;
+}
+
+.hero h1, .hero h2 {
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.hero h1 {
+  color: #D8E000;
+  font-size: 5rem;
+  max-width: 55%;
+}
+
+.hero h2 {
+  color: rgb(238, 238, 238);
+}
+
+.hero button {
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #D8E000;
+  cursor: pointer;
+  transition: all 0.3 ease-in-out;
+}
+
+.hero button:hover {
+  background-color: #1D3557;
+  color: aliceblue;
+}
+
+/* @media (max-width: 768px) {
+  .hero {
+    padding-left: 2rem;
+  }
+} */
+
+
+/* === HERO SECTION === */
+.join {
+  background-color: #1D3557;
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-area: 
+  "h1" ""
+  "h1" ""
+  ;
+
+}
