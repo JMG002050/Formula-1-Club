@@ -66,6 +66,7 @@ header ul {
 header ul li {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 header ul li a,
@@ -270,6 +271,77 @@ header ul li button:hover {
 .footer-copyright {
   background-color: #131313;
   color: aliceblue;
-  padding: 1rem;
+  padding: 0.5rem;
   border-top: 1px solid #1D3557;
+}
+
+
+/* === MOBILE RESPONSE ==== */
+@media (max-width: 768px) {
+  header {
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem;
+  }
+
+  header img {
+    display: none;
+  }
+  
+  /* === HERO SECTION === */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: none;
+    background-color: #014037;
+    min-height: 50vh;
+    padding: 2rem;
+  }
+
+  .hero h1 {
+    text-align: center;
+    font-size: 3rem;
+    max-width: 100%;
+    margin-top: 5%;
+  }
+
+  .hero h2 {
+    text-align: center;
+  }
+
+
+  /* === WHY JOIN US SECTION === */
+  .join {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "layout-section1"
+      "layout-section2"
+      "layout-section3"
+      "layout-section4";
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .join h2 {
+    text-align: center;
+  }
+
+
+  /* === WHY JOIN US SECTION === */
+  .layout-footer {
+    display: block;
+  }
+
+  .about-us,
+  .contact-us {
+    margin-bottom: 3rem;
+  }
+
+  /* ===  COPYRIGHT SECTION  === */
+  .footer-copyright {
+    text-align: center;
+  }
 }
