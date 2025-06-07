@@ -9,7 +9,12 @@ It features:
 - Responsive design for mobile, tablet, and desktop screen sizes
 
 ---
+## 🌐 Live Site
 
+Check out the project live here:  
+👉 [Formula 1 Club Website](https://jmg002050.github.io/Formula-1-Club/)
+
+---
 ## 📱 Responsive Design
 
 Designed to look great across:
