@@ -321,7 +321,7 @@ header ul li button:hover {
   }
   
 
-  /* === HERO SECTION === */
+/* === HERO SECTION === */
   .hero {
     display: flex;
     flex-direction: column;
@@ -345,7 +345,7 @@ header ul li button:hover {
   }
 
 
-  /* === WHY JOIN US SECTION === */
+/* === WHY JOIN US SECTION === */
   .join {
     display: grid;
     grid-template-columns: 1fr;
@@ -363,7 +363,7 @@ header ul li button:hover {
   }
 
 
-  /* === WHY JOIN US SECTION === */
+/* === WHY JOIN US SECTION === */
   .layout-footer {
     display: block;
   }
@@ -374,7 +374,7 @@ header ul li button:hover {
   }
 
 
-  /* ===  COPYRIGHT SECTION  === */
+/* ===  COPYRIGHT SECTION  === */
   .footer-copyright {
     text-align: left;
   }
