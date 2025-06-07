@@ -102,7 +102,7 @@ header ul li button:hover {
 
 /* === HERO SECTION === */
 .hero {
-  background-image: url("/resources/hero-section.png");
+  background-image: url("./resources/hero-section.png");
   min-height: 85vh;
   background-position: center;
   background-repeat: no-repeat;
