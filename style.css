@@ -90,6 +90,10 @@ header ul li button {
   transition: background-color 0.3s ease;
 }
 
+header li:hover {
+  border-bottom: 1px solid #D8E000;
+}
+
 header ul li button:hover {
   background-color: #1D3557;
   color: white;
@@ -141,7 +145,7 @@ header ul li button:hover {
 }
 
 
-/* === HERO SECTION === */
+/* === WHY JOIN SECTION === */
 .join {
   background-color: #014037;
   color: aliceblue;
@@ -273,10 +277,33 @@ header ul li button:hover {
   color: aliceblue;
   padding: 0.5rem;
   border-top: 1px solid #1D3557;
+  text-align: left;
 }
 
 
 /* === MOBILE RESPONSE ==== */
+@media (max-width: 390px) {
+  header {
+    text-align: center;
+  }
+
+  .main-nav li {
+    cursor: pointer;
+  }
+
+  .main-nav li:hover {
+    color: aliceblue;
+    border-bottom: 1px solid #D8E000;
+  }
+
+  .footer-copyright {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+/* === iPAD RESPONSE ==== */
 @media (max-width: 768px) {
   header {
   flex-direction: column;
@@ -287,7 +314,13 @@ header ul li button:hover {
   header img {
     display: none;
   }
+
+  header li:hover {
+    border-bottom: 1px solid #D8E000;
+    
+  }
   
+
   /* === HERO SECTION === */
   .hero {
     display: flex;
@@ -296,7 +329,7 @@ header ul li button:hover {
     justify-content: flex-start;
     background-image: none;
     background-color: #014037;
-    min-height: 50vh;
+    min-height: 30vh;
     padding: 2rem;
   }
 
@@ -340,8 +373,10 @@ header ul li button:hover {
     margin-bottom: 3rem;
   }
 
+
   /* ===  COPYRIGHT SECTION  === */
   .footer-copyright {
-    text-align: center;
+    text-align: left;
   }
+
 }
