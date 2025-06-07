@@ -102,7 +102,7 @@ header ul li button:hover {
 
 /* === HERO SECTION === */
 .hero {
-  background-image: url("resources/hero-section.png");
+  background-image: url("/resources/hero-section.png");
   min-height: 85vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -205,7 +205,7 @@ header ul li button:hover {
   grid-area: layout-section4;
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("resources/free-tickets.jpg");
+    url("./resources/free-tickets.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: darken;
