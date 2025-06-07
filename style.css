@@ -46,6 +46,7 @@ header {
   background-color: #131313;
   color: rgb(237, 231, 231);
   padding: 0rem 2rem;
+  border-bottom: 1px solid #1D3557;
 }
 
 header img {
@@ -102,7 +103,7 @@ header ul li button:hover {
 
 /* === HERO SECTION === */
 .hero {
-  background-image: url("./resources/hero-section.png");
+  background-image: url("./resources/hero-ver3.png");
   min-height: 85vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,7 +148,7 @@ header ul li button:hover {
 
 /* === WHY JOIN SECTION === */
 .join {
-  background-color: #014037;
+  background-color: #131313;
   color: aliceblue;
   display: grid;
   grid-template-columns: 30% 1fr;
@@ -167,7 +168,7 @@ header ul li button:hover {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  background-color: #697C00;
+  background-color: #D8E000;
 }
 
 .layout-section2 {
@@ -183,7 +184,7 @@ header ul li button:hover {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  
+  color: #D8E000;
 }
 
 .layout-section3 {
@@ -199,6 +200,7 @@ header ul li button:hover {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  color: #D8E000;
 }
 
 .layout-section4 {
@@ -214,6 +216,7 @@ header ul li button:hover {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  color: #D8E000;
 }
 
 
@@ -235,6 +238,7 @@ header ul li button:hover {
 
 .about-us h2, .contact-us h2, .quick-links h2 {
   padding-bottom: 1rem;
+  color: #D8E000;
 }
 
 .about-us {
@@ -281,10 +285,16 @@ header ul li button:hover {
 }
 
 
+/* =======  MEDIA QUERIES  ======= */
+/*---------------------------------------------*/
 /* === MOBILE RESPONSE ==== */
 @media (max-width: 390px) {
   header {
     text-align: center;
+  }
+
+  .hero {
+    min-height: clamp(20vh, 35vh, 70vh);
   }
 
   .main-nav li {
@@ -295,6 +305,28 @@ header ul li button:hover {
     color: aliceblue;
     border-bottom: 1px solid #D8E000;
   }
+  
+  /* ===  JOIN US SECTION  === */
+  .layout-section1,
+  .layout-section2,
+  .layout-section3 {
+    margin-bottom: .5rem;
+  }
+
+  .layout-section1 h2 {
+    font-size: 3rem;
+  }
+  
+  .layout-section2 h2,
+  .layout-section3 h2,
+  .layout-section4 h2{
+    font-size: 2rem;
+  }
+
+  /* ===  FOOTER SECTION  === */
+  footer {
+    display: block;
+  }
 
   .footer-copyright {
     display: flex;
@@ -303,6 +335,23 @@ header ul li button:hover {
 }
 
 
+/*---------------------------------------------*/
+/* === STANDARD PHONES RESPONSE ==== */
+@media (max-width: 480px) {
+  .layout-section1 h2 {
+    font-size: 3rem;
+  }
+  
+  .layout-section2 h2,
+  .layout-section3 h2,
+  .layout-section4 h2{
+    font-size: 2rem;
+  }
+
+}
+
+
+/*---------------------------------------------*/
 /* === iPAD RESPONSE ==== */
 @media (max-width: 768px) {
   header {
@@ -319,7 +368,6 @@ header ul li button:hover {
     border-bottom: 1px solid #D8E000;
   }
   
-
 /* === HERO SECTION === */
   .hero {
     display: flex;
@@ -343,26 +391,32 @@ header ul li button:hover {
     text-align: center;
   }
 
-
 /* === WHY JOIN US SECTION === */
   .join {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "layout-section1"
-      "layout-section2"
-      "layout-section3"
-      "layout-section4";
-    gap: 1rem;
-    padding: 1rem;
+    display: block;
+  }
+
+  .layout-section1,
+  .layout-section2,
+  .layout-section3 {
+    margin-bottom: .5rem;
   }
 
   .join h2 {
     text-align: center;
   }
 
+  .layout-section1 h2 {
+    font-size: 3rem;
+  }
+  
+  .layout-section2 h2,
+  .layout-section3 h2,
+  .layout-section4 h2{
+    font-size: 2rem;
+  }
 
-/* === WHY JOIN US SECTION === */
+/* ===FOOTER SECTION === */
   .layout-footer {
     display: block;
   }
@@ -372,30 +426,35 @@ header ul li button:hover {
     margin-bottom: 3rem;
   }
 
-
 /* ===  COPYRIGHT SECTION  === */
   .footer-copyright {
     text-align: left;
   }
 }
 
+
+/*---------------------------------------------*/
 @media (max-width: 820px) {
   /* ===  HERO SECTION === */
   .hero {
-    min-height: 65vh;
+    /* max-height: 65vh; */
   }
 
   /* === WHY JOIN US SECTION === */
   .join {
     display: block;
+    gap: 1rem;
   }
 
   /* === FOOTER SECTION === */
-  footer {
-    display: flex;
+  .layout-footer {
+    display: block;
   }
 
-  .about-us {
-    max-width: 35%;
+
+
+  .about-us,
+  .contact-us {
+    margin-bottom: 2rem;
   }
 }
